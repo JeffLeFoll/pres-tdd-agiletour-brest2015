@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction au TDD - Test Driven Development</title>
+
+		<meta name="description" content="Présentation du TDD en prélude à la mise en place de Coding Dojo">
+		<meta name="author" content="Jean-François Le Foll">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section>
+					<img src="./images/SplashScreen.png" alt="Agile Tour Brest 2015" style="border:0px">
+				</section>
+				
+				<section>
+					<img src="./images/Sponsors.png" alt="Remerciement Sponsors" style="border:0px">
+				</section>
+
+				<section>
+					<h2>Introduction au Test Driven Development</h2>
+					<p>
+						<small> <a href="http://jefflefoll.github.io" target="_blank">Jean-François Le Foll</a> / <a href="http://twitter.com/JeffLeFoll">@JeffLeFoll</a></small>
+					</p>
+					<p>
+						 <img src="./images/Capgemini_logo.png" alt="Capgemini"  height="20%" width="20%" style="border:0px">
+					</p>
+				</section>
+
+				<section>
+					<h2>Le TDD ?</h2>
+					<img src="./images/beck_tdd.jpg" alt="TDD by example">
+				</section>
+
+				<section>
+					<h2>L'objectif ?</h2>
+					
+					<span class="fragment" >Du code propre qui fonctionne</span><span class="fragment" style="font-weight:bold; color: #0889d8;"> - maintenant.</span>
+
+				</section>
+
+				<section>
+					<h2>Comment ?</h2>
+					<p>
+						Il y a 3 règles simples:
+					</p>
+				</section>
+				
+				<section>
+					<blockquote cite="http://programmer.97things.oreilly.com/wiki/index.php/The_Three_Laws_of_Test-Driven_Development">
+						&ldquo;Ne pas écrire de code de production si ce n'est pour faire passer un test qui échoue.&rdquo;
+					</blockquote>
+				</section>
+				
+				<section>
+					<blockquote cite="http://programmer.97things.oreilly.com/wiki/index.php/The_Three_Laws_of_Test-Driven_Development">
+						&ldquo;Ne pas écrire plus de ligne de test qu'il ne faut pour échouer. Ne pas compiler est échouer.&rdquo;
+					</blockquote>
+				</section>
+				
+				<section>
+					<blockquote cite="http://programmer.97things.oreilly.com/wiki/index.php/The_Three_Laws_of_Test-Driven_Development">
+						&ldquo;Ne pas écrire plus de code de production qu'il ne faut pour faire passer avec succès le test.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<p align="center">
+						Le Mantra du TDD <br>
+						<img src="./images/red_green_refactor.jpg" alt="Red => Green => Refacto" style="border:0px">
+					</p>
+				</section>
+
+				<section>
+					<p>Le refactoring, <span style="font-weight:bold; color: red;">étape obligatoire</span></p>
+				</section>
+				
+				<section>
+					<h2>Une règle :</h2>
+					<h2>F.I.R.S.T</h2>
+					<p>
+					<ul>
+						<li>Fast</li>
+						<li>Independant</li>
+						<li>Repeatable</li>
+						<li>Self-validating</li>
+						<li>Timely</li>
+					</ul>
+					</p>
+				</section>
+				
+				<section>
+					<p>
+						Et ensuite ?
+					</p>	
+				</section>	
+
+				<section>
+					<p>Un peu de code !</p>
+					<img src="./images/noidea.jpg" alt="Et maintenant ?" style="border:0px">
+				</section>	
+
+				<section>
+					<p>Le grand classique du TDD : Le jeu du FizzBuzz</p>
+					<br>
+					<p>
+						Écrire un programme qui affiche les entiers de 0 à 100. <br>
+						<ul>
+						<li>Pour les multiples de 3 remplacer le nombre par fizz.</li>
+						<li>Pour les multiples de 5 remplacer le nombre par buzz.</li>
+						<li>Pour les multiples de 3 et 5 remplacer le nombre par fizzbuzz.</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<img src="./images/Feedback.png" alt="Feedback" style="border:0px">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				mouseWheel: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
