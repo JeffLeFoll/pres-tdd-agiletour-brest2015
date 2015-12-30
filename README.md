@@ -1,4 +1,4 @@
-# Présentation TDD - Test Driven Development
+# Présentation TDD - Test Driven Development [![Build Status](https://travis-ci.org/JeffLeFoll/pres-tdd-agiletour-brest2015.svg?branch=master)](https://travis-ci.org/JeffLeFoll/pres-tdd-agiletour-brest2015)
 
 Présentation sur le TDD faite à l'Agile Tour Brest 2015
 La présentation est [visible ici](http://jefflefoll.github.io/pres-tdd-agiletour-brest2015). (Branche gh-pages)
