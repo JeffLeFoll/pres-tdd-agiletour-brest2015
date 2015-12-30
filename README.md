@@ -19,5 +19,5 @@ Pour ceux qui voudraient voir une solution plus complète je vous invite aller v
 ## Pour avoir le détail des tâches :
 `gradlew tasks`
 
-## Licence
-[MIT] (LICENCES)
+## License
+[MIT] (LICENSE)
