@@ -5,3 +5,16 @@ La présentation est [visible ici](http://jefflefoll.github.io/pres-tdd-agiletou
 
 Ici, vous trouverez le code du FizzBuzz produit lors de cette présentation.
 
+Le projet utilise Gradle comme outil de build.
+
+## Pour générer les fichiers specifique à éclipse en ligne de commande : 
+gradlew eclipse
+
+## Pour éxécuter les tests unitaires:
+gradlew test
+
+## Pour avoir le détail des tâches
+gradlew tasks
+
+## Licence
+[MIT] (LICENCES)
